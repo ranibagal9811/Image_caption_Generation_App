@@ -17,7 +17,7 @@ st.set_page_config(page_title="Image Caption Generator", layout="wide")
 # ----------------------------
 @st.cache_resource
 def load_resources():
-    model = tf.keras.models.load_model("image_caption_model.keras")
+    model = tf.keras.models.load_model("imagecaptionmodel.keras")
 
     with open("tokenizer.pkl", "rb") as f:
         tokenizer = pickle.load(f)
